@@ -267,6 +267,10 @@ button {
 .header {
      width: 100%;
      height: 116px;
+     position:fixed;
+     z-index: 100000000;
+     margin: 0;
+     padding: 0;
 }
 
 .header_top {
@@ -379,7 +383,7 @@ ul.social_icon_top li a:hover {
      background: #161825;
      color: #fff;
      border-radius: 6px;
-}
+}fff
 
 .navbar-expand-md .navbar-nav {
      padding-right: 10px;
@@ -402,10 +406,15 @@ ul.search li a:hover {
 
 .full_bg {
      background: url(../images/banner3.png);
+     filter:brightness(40%) opacity(90%);
      backface-visibility: hidden;
      background-size: 100% 100%;
-     background-position: center;
+     background-position: fixed;
+     height: 100vh;
+     width:100%;
      background-repeat: no-repeat;
+     position: fixed;
+     z-index: -1;
 }
 
 .banner_main {
@@ -414,6 +423,7 @@ ul.search li a:hover {
 }
 
 .build_box {
+     position: relative;
      text-align: left;
      padding-top: 20%;
 }
@@ -423,7 +433,7 @@ ul.search li a:hover {
 }
 
 .build_box p {
-     color: #161825;
+     color: #ddd;
      font-size: 17px;
      line-height: 30px;
      font-weight: normal;
@@ -433,7 +443,7 @@ ul.search li a:hover {
 .build_box h1 {
      font-size: 100px;
      font-weight: bold;
-     color: #161825;
+     color: #ddd;
      line-height: 90px;
      padding-bottom: 20px;
      display: block;
@@ -442,10 +452,11 @@ ul.search li a:hover {
 .build_box .conatct_btn {
      font-size: 20px;
      padding: 15px 0;
+     color: #161825;
      text-transform: uppercase;
      font-weight: normal;
      max-width: 278px;
-     background: #161825;
+     background: #ddd;
 }
 
 .build_box .conatct_btn:hover {
@@ -495,7 +506,7 @@ ul.search li a:hover {
 
 .titlepage h2 {
      font-size: 40px;
-     color: #1c1c1c;
+     color: #ddd;
      line-height: 40px;
      font-weight: 700;
      padding: 0;
@@ -517,8 +528,8 @@ ul.search li a:hover {
 
 .read_more {
      font-size: 17px;
-     background-color: #1b1b1a;
-     color: #fff;
+     background-color: #ddd;
+     color: #161825;
      padding: 17px 0px;
      width: 100%;
      max-width: 186px;
@@ -532,8 +543,8 @@ ul.search li a:hover {
 }
 
 .read_more:hover {
-     background: #161825;
-     color: #fff;
+     background: #dadada;
+     color: #161825;
      transition: ease-in all 0.5s;
 }
 
@@ -541,6 +552,7 @@ ul.search li a:hover {
 /* three_box */
 
 .three_box {
+     color:#1f1f1f;
      margin-top: -90px;
 }
 
@@ -581,8 +593,13 @@ ul.search li a:hover {
 /** about section **/
 
 .about {
-     background-color: #fff;
+     background-color: #161825;
+     filter: opacity(80%);
+     border-radius: 2%;
+     color: #ddd;
      padding-top: 90px;
+     padding-right: 15px;
+     padding-left: 15px;
 }
 
 .about .titlepage {
@@ -590,17 +607,20 @@ ul.search li a:hover {
      float: right;
      width: 100%;
      text-align: left;
+     color:#ddd;
      padding-bottom: 0;
 }
 
 .about .titlepage span {
      font-family: 'Raleway', sans-serif;
+     color:#ddd;
      padding-bottom: 60px;
      padding-top: 40px;
 }
 
 .about_img {
-     padding-right: 40px;
+     filter: opacity(100%);
+     padding-right: 72px;
      padding-left: 55px;
 }
 
@@ -619,8 +639,8 @@ ul.search li a:hover {
 /** projects section **/
 
 .projects {
-     padding-top: 90px;
-     background: #fff;
+     padding-top:0px;
+     margin:25px 25px;
 }
 
 .relative3 {
@@ -638,11 +658,14 @@ ul.search li a:hover {
 
 .project_img figure img {
      width: 100%;
+     filter: grayscale(10%) brightness(70%);
+     border-radius: 4%;
 }
 
 .project_text {
      position: absolute;
-     bottom: 0;
+     bottom: 10px;
+     color: #000;
      height: 123px;
      overflow: hidden;
      padding: 20px 20px 20px 20px;
@@ -651,18 +674,18 @@ ul.search li a:hover {
 }
 
 
-/*
+
 .project_text::before {
      position: absolute;
-     content: "";
-     background: url(../images/link.png);
+     color: #000;
+     bottom: 10;
      width: 77px;
      height: 77px;
      top: 0;
      background-repeat: no-repeat;
      right: 10px;
 }
-*/
+
 
 .project_text:hover {
      cursor: pointer;
@@ -672,12 +695,14 @@ ul.search li a:hover {
 }
 
 #pro_ho:hover.project_text h3 {
+     visibility: inherit;
      color: #1b1a1a;
      transition: ease-in all 0.5s;
      padding-top: 20px;
 }
 
 .project_text h3 {
+     visibility: hidden;
      transition: ease-in all 0.5s;
      color: #fff;
      text-align: left;
@@ -885,7 +910,6 @@ ul.social_icon_staff li a:hover {
 /** contact section **/
 
 .contact {
-     background: #fff;
      margin-top: 90px;
 }
 
@@ -894,8 +918,9 @@ ul.social_icon_staff li a:hover {
 }
 
 .main_form {
-     padding: 40px 80px;
-     background: #fff;
+     padding: 25px 25px;
+     background: #161825;
+     filter: opacity(80%);
      box-shadow: 0 0 250px rgba(3, 3, 3, 0.15);
 }
 
