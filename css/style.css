@@ -963,6 +963,7 @@ ul.social_icon_staff li a:hover {
      display: block;
      margin-top: 10px !important;
      font-weight: 500;
+     border-radius: 6px;
 }
 
 .main_form .send_btn:hover {
