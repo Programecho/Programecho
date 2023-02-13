@@ -4,7 +4,7 @@
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media (min-width: 1200px) and (max-width: 1342px) {
-    #myCarousel .carousel-control-prev {
+    #mainCarousel .carousel-control-prev {
         right: 15.5%;
     }
     #proj .carousel-control-prev {
@@ -16,7 +16,7 @@
     .build_box h1 {
         font-size: 87px;
     }
-    #myCarousel .carousel-control-prev {
+    #mainCarousel .carousel-control-prev {
         right: 16.5%;
     }
     #proj .carousel-control-prev {
@@ -53,11 +53,11 @@
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 9px 11px;
     }
-    #myCarousel .carousel-control-next {
+    #mainCarousel .carousel-control-next {
         right: 8%;
     }
-    #myCarousel .carousel-control-prev,
-    #myCarousel .carousel-control-next {
+    #mainCarousel .carousel-control-prev,
+    #mainCarousel .carousel-control-next {
         width: 55px;
         height: 55px;
     }
@@ -126,13 +126,13 @@
     .about_img {
         margin-top: 30px;
     }
-    #myCarousel .carousel-control-prev,
-    #myCarousel .carousel-control-next {
+    #mainCarousel .carousel-control-prev,
+    #mainCarousel .carousel-control-next {
         width: 55px;
         height: 55px;
         top: 100%;
     }
-    #myCarousel .carousel-control-prev {
+    #mainCarousel .carousel-control-prev {
         right: 19%;
     }
     .jkhgkj {
@@ -281,13 +281,13 @@
         width: 86px;
         height: 114px;
     }
-    #myCarousel .carousel-control-prev,
-    #myCarousel .carousel-control-next {
+    #mainCarousel .carousel-control-prev,
+    #mainCarousel .carousel-control-next {
         width: 55px;
         height: 55px;
         top: 100%;
     }
-    #myCarousel .carousel-control-prev {
+    #mainCarousel .carousel-control-prev {
         right: 27%;
     }
     ul.search {
