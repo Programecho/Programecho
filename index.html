@@ -1,173 +1,90 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>ProgramEcho</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="./css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="./css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="./css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
 
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="full_bg">
-         <h1></h1>
-      </div>
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      
+<head>
+   <title>Programecho</title>
 
+   <!-- Generic Meta -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <meta name="keywords" content="Programecho, Programming, Development">
+   <meta name="description" content="Programecho">
+   <meta name="author" content="Programecho">
+
+   <!-- Required CSS Libs -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/responsive.css">
+   <link rel="stylesheet" href="./css/main.css">
+
+   <!-- favicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+</head>
+
+<body class="main-layout">
+
+   <div class="full-bg">
+      <h1></h1>
+   </div>
+
+   <div class="header">
+      <div class="header-top">
       </div>
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="header_top">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-3">
-                        <ul class="contat_infoma">
-                           <li><i class="fa fa-phone" aria-hidden="true"></i> Call : +963-958611943</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-6">
-                        <ul class="social_icon_top text_align_center  ">
-                           <li><a href="https://www.facebook.com/Programecho.php"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                     <div class="col-md-3">
-                        <ul class="contat_infoma text_align_right">
-                           <li><a href="Javascript:void(0)"> <i class="fa fa-phone" aria-hidden="true"></i> ProgramEcho@outlook.com</a></li>
-                        </ul>
-                     </div>
-                  </div>
+      <div class="header-bottom">
+         <div class="row">
+            <div class="col-sm-12 col-md-4">
+               <div class="full">
+                  <a href="#" class="font-programecho text-upper color-programecho logo">Programecho</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems"
+                     aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
                </div>
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="header_bottom">
-                        <div class="row">
-                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                              <div class="full">
-                                 <div class="center-desk">
-                                    <div class="logo">
-                                       <a href="index.blade.php">ProgramEcho</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                              <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                                 <span class="navbar-toggler-icon"></span>
-                                 </button>
-                                 <div class="collapse navbar-collapse" id="navbarsExample04">
-                                    <ul class="navbar-nav mr-auto">
-                                       <li class="nav-item active">
-                                          <a class="nav-link" href="index.html">Home</a>
-                                       </li>
-                                       <li class="nav-item">
-                                          <a class="nav-link" href="about.html">About</a>
-                                       </li>
-                                       <li class="nav-item">
-                                          <a class="nav-link" href="project.html">project</a>
-                                       </li>
+            <div class="col-sm-12 col-md-8">
+               <nav class="navigation navbar navbar-expand-md navbar-dark ">
 
-                                       <li class="nav-item">
-                                          <a class="nav-link" href="contact.html">Contact Us</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <ul class="search">
-                                    <li><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                 </ul>
-                              </nav>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="collapse navbar-collapse" id="navbarItems">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                           <a class="nav-link" href="#project">project</a>
+                        </li> -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div class="mx-5">
+      <section class="banner-main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-9">
+                  <div class="build-box">
+                     <h1>Build your own App</h1>
+                     <p>choose your platform and color and let's make your dream real<br> The best developer
+                        is working with Us</p>
+                     <a class="read-more conatct-btn" href="#contact" role="button">Contact Us</a>
                   </div>
                </div>
             </div>
          </div>
-         <!-- end header inner -->
-         <!-- end header -->
-         <!-- banner -->
-         <section class="banner_main">
-            <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
-               <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-               </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <div class="carousel-caption  banner_po">
-                           <div class="row">
-                              <div class="col-md-9">
-                                 <div class="build_box">
-                                    <h1>Build your own App</h1>
-                                    <p>choose your platform and color and let's make your dream real<br> The best developer is working with Us</p>
-                                    <a class="read_more conatct_btn" href="contact.blade.php" role="button">Contact Us</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="carousel-caption banner_po">
-                           <div class="row">
-                              <div class="col-md-9">
-                                 <div class="build_box">
-                                    <h1>Build your own App</h1>
-                                    <p>Make money from your application<br> the latest platforms is avaliable Now</p>
-                                    <a class="read_more conatct_btn" href="contact.blade.php" role="button">Contact Us</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </header>
-      <!-- end banner -->
-      <!-- projects -->
-      <div class="projects">
+      </section>
+      <!-- <div class="projects">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-md-12">
+               <div class="col-12">
                   <div class="titlepage">
                      <h2>Our Features Projects</h2>
                      <br>
@@ -175,7 +92,7 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-md-12">
+               <div class="col-12">
                   <div id="proj" class="carousel slide projects_ban" data-ride="carousel">
                      <ol class="carousel-indicators">
                         <li data-target="#proj" data-slide-to="0" class="active"></li>
@@ -190,7 +107,7 @@
                                     <div class="col-md-4">
                                        <div class="project">
                                           <div class="project_img">
-                                             <figure><img src="images/web_site.webp" alt="#"/></figure>
+                                             <figure><img src="images/web_site.webp" alt="#" /></figure>
                                           </div>
                                           <div id="pro_ho" class="project_text">
                                              <h3><br>Make your website<br> well designed and built</h3>
@@ -201,10 +118,10 @@
                                     <div class="col-md-4">
                                        <div class="project">
                                           <div class="project_img">
-                                             <figure><img src="images/system.webp" alt="#"/></figure>
+                                             <figure><img src="images/system.webp" alt="#" /></figure>
                                           </div>
                                           <div id="pro_ho" class="project_text">
-                                             <h3><br>Make your own system  Now</h3>
+                                             <h3><br>Make your own system Now</h3>
                                              <p>Manage your busnise easly by a profisional system</p>
                                           </div>
                                        </div>
@@ -212,7 +129,7 @@
                                     <div class="col-md-4">
                                        <div class="project">
                                           <div class="project_img">
-                                             <figure><img src="images/web_app.webp" alt="#"/></figure>
+                                             <figure><img src="images/web_app.webp" alt="#" /></figure>
                                           </div>
                                           <div id="pro_ho" class="project_text">
                                              <h3><br>Make your web Application <br> well designed and built</h3>
@@ -229,110 +146,93 @@
                </div>
             </div>
          </div>
-      </div>
-      <!-- end projects -->
-      <!-- about -->
+      </div> -->
       <div class="about">
          <div class="container-fluid">
-            <div class="row d_flex">
-               <div class="col-md-7">
+            <div class="row">
+               <div class="col-7">
                   <div class="titlepage">
                      <h2>About Our Company</h2>
-                     <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised</span>
-                     <a class="read_more" href="Javascript:void(0)"> Read More</a>
+                     <span>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
+                        alteration in some form, by injected humour, or randomisedThere are many variations of passages
+                        of
+                        Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                        humour,
+                        or randomised</span>
                   </div>
                </div>
-               <div class="col-md-5">
-                  <div class="about_img">
-                     <figure><img src="images/coding-man_1098-18084.webp" alt="#"/></figure>
+               <div class="col-5">
+                  <div class="about-img">
+                     <figure><img src="images/coding-man_1098-18084.webp" alt="#" /></figure>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- end about -->
-      
-
-      <!--  contact -->
       <div class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Contact Us</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6 padding_right0">
-                  <form id="request" class="main_form" Action="127.0.0.1:800/web/contact" method="post">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name">
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone" type="type" name="Phone">
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email">
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
-                        </div>
-                        <div class="col-md-12">
-                           <input type="submit" value="send" class="send_btn">
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div style="height: 20px;">
-      </div>
-      <div class="container" style="background-color: #161825; height: auto; width:100%;">
          <div class="row">
-            <div class="col-md-3" style="margin-top:10px;">
-               <ul class="contat_infoma">
-                  <li><i class="fa fa-phone" aria-hidden="true"></i> Call : +963-958611943</li>
-               </ul>
-            </div>
-            <div class="col-md-6" style="margin-top:10px;">
-               <ul class="social_icon_top text_align_center  ">
-                  <li><a href="https://www.facebook.com/Programecho.php"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-               </ul>
-            </div>
-            <div class="col-md-3" style="margin-top:10px;">
-               <ul class="contat_infoma text_align_right">
-                  <li><a href="Javascript:void(0)"> <i class="fa fa-phone" aria-hidden="true"></i> ProgramEcho@outlook.com</a></li>
-               </ul>
+            <div class="col-md-12">
+               <form id="request" class="main-form" action="#" method="post">
+                  <div class="row px-5">
+                     <div class="col-12 text-center titlepage">
+                        <h2 class="font-programecho text-upper">Contact Us</h2>
+                     </div>
+                     <div class="col-12 mb-4">
+                        <input class="contactus" placeholder="Name" type="text" name="Name" required>
+                     </div>
+                     <div class="col-12 mb-4">
+                        <input class="contactus" placeholder="Phone" type="text" name="Phone" required>
+                     </div>
+                     <div class="col-12 mb-4">
+                        <input class="contactus" placeholder="Email" type="email" name="Email" required>
+                     </div>
+                     <div class="col-12 mb-4">
+                        <textarea class="textarea" placeholder="Message" Message="Name" required
+                           minlength="10"></textarea>
+                     </div>
+                     <div class="col-12 text-right mb-0">
+                        <input type="submit" value="send" class="btn-send">
+                     </div>
+                  </div>
+               </form>
             </div>
          </div>
       </div>
-      <!-- end contact -->
-   </div>
-      <!--  footer -->
+      <div class="contact-bottom">
+         <div class="row">
+            <div class="col-3">
+               <div class="contact-info">
+                  <a href="tel:+963958611943">
+                     <span>&#128241;</span>
+                     +963 958 611 943
+                  </a>
+               </div>
+            </div>
+            <div class="col-6">
+            </div>
+            <div class="col-3">
+               <div class="contact-info text-right">
+                  <a href="mailto:programecho@outlook.com">
+                     programecho@outlook.com
+                     <span>&#128232;</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class=" col-lg-3 col-md-6">
-                     <a class="logo_bottom"><img src="images/FOOTER.png" alt="#"/></a>
-                     <p class="many">
+                  <div class="col-md-8 offset-md-2">
+                     <span class="font-programecho font-white font-x-large">
+                        Programecho
+                     </span>
+                     <br>
+                     <span class="many">
                         The best Way to Success
-                     </p>
-                  </div>
-                  <div class="col-lg-2 offset-lg-1 col-md-6">
-                     <h3>QUICK LINKS</h3>
-                     <ul class="link_menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html"> About</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                     </ul>
+                     </span>
                   </div>
                </div>
             </div>
@@ -340,20 +240,18 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-8 offset-md-2">
-                        <p>© 2020 All Rights Reserved.  Design by ProgramEcho</p>
+                        <p>© 2023 All Rights Reserved to <span class="font-programecho">Programecho</span></p>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+   </div>
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+</body>
+
 </html>
