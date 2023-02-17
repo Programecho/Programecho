@@ -2,7 +2,9 @@
     font-family: 'Programecho';
     src: url(../fonts/Programecho.ttf);
 }
-
+* {
+    scroll-margin-top: 13rem;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -114,7 +116,7 @@ img {
     padding: .5rem;
     color: #161825;
     background-color: #fff8;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .contact-info a:hover {
@@ -123,7 +125,7 @@ img {
 
 
 .main-form {
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1.5rem 1.5rem;
     background: #161825;
     filter: opacity(80%);
@@ -177,8 +179,8 @@ img {
 .contact-bottom {
     background-color: #161825;
     padding: 1.5rem;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
@@ -203,11 +205,11 @@ img {
 
 .header-bottom {
     background-color: #fff;
-    height: 100px;
+    height: auto;
     padding: 1.5rem;
     margin: 0 3rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     z-index: 1000;
 }
 
@@ -318,7 +320,7 @@ img {
 .about {
     background-color: #161825;
     filter: opacity(80%);
-    border-radius: 2rem;
+    border-radius: 1rem;
     color: #ddd;
     padding: 1.5rem;
     margin-top: 5.5rem;
@@ -354,16 +356,12 @@ img {
 
 /*-- navigation--*/
 
-.navigation.navbar {
-    float: right;
-}
 
 .navbar {
     padding: 0;
 }
 
 .navbar-nav .nav-link {
-    padding: 15px 25px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
@@ -438,3 +436,105 @@ img {
 .copyright a:hover {
     color: #161825;
 }
+
+
+/** services section **/
+
+.services {
+    background-color: #161825;
+    filter: opacity(80%);
+    border-radius: 1rem;
+    color: #ddd;
+    padding: 1.5rem;
+    margin-top: 5.5rem;
+
+}
+
+.relative3 {
+    position: inherit;
+    padding-bottom: 130px;
+}
+
+.services_ban {
+    padding: 0 20px;
+}
+
+.service_img figure {
+    margin: 0;
+}
+
+.service_img figure img {
+    width: 100%;
+    filter: grayscale(10%) brightness(70%);
+    border-radius: 4%;
+}
+
+.service_text {
+    position: absolute;
+    bottom: 10px;
+    color: #000;
+    height: 123px;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
+    transition: ease-in all 0.5s;
+    width: 100%;
+    border-bottom-right-radius: 4%;
+    border-bottom-left-radius: 4%;
+
+}
+
+
+
+.service_text::before {
+    position: absolute;
+    color: #000;
+    bottom: 10;
+    width: 77px;
+    height: 77px;
+    top: 0;
+    background-repeat: no-repeat;
+    right: 10px;
+}
+
+
+.service_text:hover {
+    cursor: pointer;
+    background-color: #fffffff2;
+    height: 303px;
+    transition: ease-in all 0.5s;
+}
+
+#pro_ho:hover.service_text h3 {
+    visibility: inherit;
+    color: #1b1a1a;
+    transition: ease-in all 0.5s;
+    padding-top: 20px;
+}
+
+.service_text h3 {
+
+    transition: ease-in all 0.5s;
+    color: #000;
+    text-align: left;
+    display: block;
+    font-size: 28px;
+    /*font-weight: 500;*/
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.service_text p {
+    color: #1b1a1a;
+    font-size: 17px;
+    text-align: left;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+
