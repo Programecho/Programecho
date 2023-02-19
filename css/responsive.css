@@ -170,7 +170,7 @@
     }
 
     .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
+        background: url(../images/menu_icon.webp);
         filter: grayscale(100%);
         background-repeat: no-repeat;
     }
@@ -274,7 +274,7 @@
     }
 
     .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
+        background: url(../images/menu_icon.webp);
         filter: grayscale(100%);
         background-repeat: no-repeat;
     }
