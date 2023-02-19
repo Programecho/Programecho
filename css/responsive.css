@@ -7,6 +7,14 @@
     #proj .carousel-control-prev {
         left: 45.6%;
     }
+
+    * {
+        scroll-margin-top: 15rem;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -21,9 +29,21 @@
     .footer h3 {
         font-size: 14px;
     }
+
+    * {
+        scroll-margin-top: 15rem;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    * {
+        scroll-margin-top: 12.5rem;
+    }
+
     .header {
         height: 154px;
     }
@@ -52,12 +72,7 @@
         font-size: 11px;
     }
 
-    .titlepage h2 {
-        font-size: 40px;
-        line-height: 30px;
-    }
-
-    .projects_ban {
+    .services_ban {
         padding: 0 0px;
     }
 
@@ -68,9 +83,17 @@
     .main_form {
         padding: 40px 30px;
     }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    * {
+        scroll-margin-top: 8.5rem;
+    }
+
     .header {
         height: 155px;
     }
@@ -113,8 +136,8 @@
         position: absolute;
         width: 100%;
         left: 0;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         z-index: -1 !important;
     }
 
@@ -151,9 +174,17 @@
         filter: grayscale(100%);
         background-repeat: no-repeat;
     }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 575px) {
+    * {
+        scroll-margin-top: 8rem;
+    }
+
     .project_img {
         margin-top: 30px
     }
@@ -180,10 +211,7 @@
         right: 54%;
     }
 
-    .titlepage h2 {
-        font-size: 30px;
-        line-height: 31px;
-    }
+    
 
     .middle {
         margin: 0;
@@ -194,7 +222,7 @@
         padding: 40px 20px;
     }
 
-    .projects_ban {
+    .services_ban {
         padding: 0 0px;
     }
 
@@ -214,8 +242,8 @@
         position: absolute;
         width: 100%;
         left: 0;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         z-index: -1 !important;
     }
 
@@ -250,6 +278,10 @@
         filter: grayscale(100%);
         background-repeat: no-repeat;
     }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 412px) {
@@ -257,4 +289,11 @@
         font-size: 1.6rem !important;
     }
 
+    * {
+        scroll-margin-top: 7.5rem;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }
