@@ -167,6 +167,7 @@ img {
     width: 100%;
     font-weight: 500;
     border: none;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 

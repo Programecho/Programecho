@@ -173,7 +173,7 @@
       <div id="contact" class="contact">
          <div class="row">
             <div class="col-md-12">
-               <form id="request" class="main-form" action="#" method="post">
+               <form id="contactForm" class="main-form" method="post">
                   <div class="row px-5">
                      <div class="col-12 text-center titlepage">
                         <h2 class="font-programecho text-upper">Contact Us</h2>
@@ -188,11 +188,11 @@
                         <input class="contactus" placeholder="Email" type="email" name="Email" required>
                      </div>
                      <div class="col-12 mb-4">
-                        <textarea class="textarea" placeholder="Message" Message="Name" required
+                        <textarea class="textarea" placeholder="Message" name="Message" required
                            minlength="10"></textarea>
                      </div>
                      <div class="col-12 text-right mb-0">
-                        <input type="submit" value="send" class="btn-send">
+                        <input id="sendBtn" type="button" value="send" class="btn-send">
                      </div>
                   </div>
                </form>
@@ -252,6 +252,7 @@
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
 </body>
 
 </html>
