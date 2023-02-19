@@ -218,7 +218,7 @@ img {
 /*  */
 
 .full-bg {
-    background: url(../images/banner3.png);
+    background: url(../images/banner3.webp);
     filter: brightness(40%) opacity(90%);
     backface-visibility: hidden;
     background-size: 100% 100%;
