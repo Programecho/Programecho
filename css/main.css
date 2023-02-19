@@ -50,7 +50,7 @@ img {
 }
 
 .font-x-large {
-    font-size: 3rem;
+    font-size: 10vw;
 }
 
 .text-upper {
@@ -64,9 +64,8 @@ img {
 }
 
 .titlepage h2 {
-    font-size: 40px;
+    font-size: 8vw;
     color: #ddd;
-    line-height: 40px;
     font-weight: 700;
     padding: 0;
 }
@@ -208,7 +207,7 @@ img {
     background-color: #fff;
     height: auto;
     padding: 1.5rem;
-    margin: 0 3rem;
+    margin: 0 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     z-index: 1000;
@@ -260,29 +259,23 @@ img {
 
 .build-box h1 {
     padding-top: 100px;
-    font-size: 100px;
+    font-size: 8vw;
     font-weight: bold;
     color: #ddd;
-    line-height: 90px;
+    
     padding-bottom: 20px;
     display: block;
 }
 
 .build-box .conatct-btn {
     font-size: 20px;
-    padding: 15px 0;
+    padding: 1rem;
     color: #161825;
     text-transform: uppercase;
     font-weight: normal;
     max-width: 278px;
     background: #ddd;
 }
-
-.build-box .conatct-btn:hover {
-    background: #1b1b1a;
-}
-
-
 .banner .carousel-indicators {
     display: none;
 }
@@ -296,7 +289,6 @@ img {
     background-color: #ddd;
     color: #161825;
     padding: 17px 0px;
-    width: 100%;
     max-width: 186px;
     text-align: center;
     display: inline-block;
