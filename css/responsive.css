@@ -15,6 +15,9 @@
     .hide-on-mobile {
         display: none;
     }
+    .build-box h1{
+        padding-top:1rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -36,6 +39,9 @@
 
     .hide-on-mobile {
         display: none;
+    }
+    .build-box h1{
+        padding-top:1rem;
     }
 }
 
@@ -87,6 +93,9 @@
     .hide-on-mobile {
         display: none;
     }
+    .build-box h1{
+        padding-top:3rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -98,8 +107,9 @@
         height: 155px;
     }
 
-    .build_box h1 {
+    .build-box h1 {
         font-size: 67px;
+        padding-top:3rem;
     }
 
     #proj .carousel-control-prev,
@@ -189,9 +199,10 @@
         margin-top: 30px
     }
 
-    .build_box h1 {
+    .build-box h1 {
         font-size: 35px;
         line-height: 41px;
+        padding-top: 5rem;
     }
 
     .logo {
