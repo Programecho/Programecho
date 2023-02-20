@@ -4,6 +4,11 @@
 }
 * {
     scroll-margin-top: 13rem;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 html {
     scroll-behavior: smooth;
@@ -15,7 +20,6 @@ li {
     padding: 0px;
     list-style: none;
 }
-
 a {
     color: #222222;
     outline: none !important;
@@ -258,7 +262,7 @@ img {
 }
 
 .build-box h1 {
-    padding-top: 100px;
+
     font-size: 8vw;
     font-weight: bold;
     color: #ddd;
@@ -268,7 +272,6 @@ img {
 }
 
 .build-box .conatct-btn {
-    font-size: 20px;
     padding: 1rem;
     color: #161825;
     text-transform: uppercase;
@@ -285,7 +288,6 @@ img {
 
 
 .read-more {
-    font-size: 17px;
     background-color: #ddd;
     color: #161825;
     padding: 17px 0px;
