@@ -184,13 +184,18 @@
         filter: grayscale(100%);
         background-repeat: no-repeat;
     }
-
+    .titlepage h2 {
+        font-size: 8vw;
+    }
     .hide-on-mobile {
         display: none;
     }
 }
 
 @media (max-width: 575px) {
+    .titlepage h2 {
+        font-size: 8vw;
+    }
     * {
         scroll-margin-top: 8rem;
     }
@@ -296,6 +301,9 @@
 }
 
 @media (max-width: 412px) {
+    .titlepage h2 {
+        font-size: 8vw;
+    }
     .logo {
         font-size: 1.6rem !important;
     }
