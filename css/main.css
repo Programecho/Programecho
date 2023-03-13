@@ -182,7 +182,7 @@ img {
 
 .contact-bottom {
     background-color: #161825;
-    padding: 1.5rem;
+    padding: 1.0rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     position: -webkit-sticky;
@@ -384,7 +384,7 @@ img {
 
 .footer {
     background: #161825;
-    padding-top: 90px;
+    padding-top: 0vw;
     text-align: center;
 }
 
