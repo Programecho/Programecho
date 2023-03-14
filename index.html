@@ -91,7 +91,7 @@ Build your dream with us "
 								>Programecho</a
 							>
 							<button
-								class="navbar-toggler"
+								class="navbar-toggler mobile-only"
 								type="button"
 								data-toggle="collapse"
 								data-target="#navbarItems"
@@ -161,9 +161,17 @@ Build your dream with us "
 			<div id="about" class="about">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-lg-7 col-sm-12">
+						<div class="col-12 mobile-and-tab py-3">
+							<div class="about-img">
+								<figure>
+									<img src="images/about.webp" alt="#" />
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-7 col-12">
 							<div class="titlepage">
-								<h2>About Our Company</h2>
+								<h2 class="font-monospace">About Our Company</h2>
+								<hr style="border-top-color: white;">
 								<span
 									>There are many variations of passages of
 									Lorem Ipsum available, but the majority have
@@ -176,7 +184,7 @@ Build your dream with us "
 								>
 							</div>
 						</div>
-						<div class="col-5 hide-on-mobile">
+						<div class="col-5 desktop-only">
 							<div class="about-img">
 								<figure>
 									<img src="images/about.webp" alt="#" />
@@ -188,151 +196,73 @@ Build your dream with us "
 			</div>
 
 			<div id="services" class="services">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<div class="titlepage">
-								<h2>Our Services</h2>
-								<br />
-							</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="titlepage">
+							<h2 class="font-monospace ">Our Services</h2>
+							<br />
 						</div>
-						<div class="col-12">
-							<div
-								id="proj"
-								class="carousel slide services_ban"
-								data-ride="carousel"
-							>
-								<ol class="carousel-indicators">
-									<li
-										data-target="#proj"
-										data-slide-to="0"
-										class="active"
-									></li>
-									<li
-										data-target="#proj"
-										data-slide-to="1"
-									></li>
-									<li
-										data-target="#proj"
-										data-slide-to="2"
-									></li>
-								</ol>
-								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<div class="container-fluid">
-											<div
-												class="carousel-caption relative3"
-											>
-												<div class="row">
-													<div class="col-md-4 px-0">
-														<div class="service">
-															<div
-																class="service_img"
-															>
-																<figure>
-																	<img
-																		src="images/web_site.webp"
-																		alt="#"
-																	/>
-																</figure>
-															</div>
-														</div>
-														<div
-															id="pro_ho"
-															class="service_text"
-														>
-															<h3>
-																<br />Make your
-																website<br />
-																well designed
-																and built
-															</h3>
-															<p>
-																make your
-																institute
-																avaliable on the
-																internet
-															</p>
-														</div>
-													</div>
-													<div class="col-md-4 px-0">
-														<div class="service">
-															<div
-																class="service_img"
-															>
-																<figure>
-																	<img
-																		src="images/system.webp"
-																		alt="#"
-																	/>
-																</figure>
-																<div
-																	id="pro_ho"
-																	class="service_text"
-																>
-																	<h3>
-																		<br />Make
-																		your own
-																		system
-																		Now
-																	</h3>
-																	<p>
-																		Manage
-																		your
-																		busnise
-																		easly by
-																		a
-																		profisional
-																		system
-																	</p>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="col-md-4 px-0">
-														<div class="service">
-															<div
-																class="service_img"
-															>
-																<figure>
-																	<img
-																		src="images/web_app.webp"
-																		alt="#"
-																	/>
-																</figure>
-															</div>
-															<div
-																id="pro_ho"
-																class="service_text"
-															>
-																<h3>
-																	<br />Make
-																	your web
-																	Application
-																	<br />
-																	well
-																	designed and
-																	built
-																</h3>
-																<p>
-																	make your
-																	institute
-																	avaliable on
-																	your
-																	client's
-																	phones
-																</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+					</div>
+					<div class="col-lg-3"></div>
+					<div class="col-12 col-lg-6">
+						<div class="row">
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/laravel-svgrepo-com.svg"
+									class="service-img service-img-red px-xs-none"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/node-js-svgrepo-com.svg"
+									class="service-img service-img-green"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/flutter-svgrepo-com.svg"
+									class="service-img service-img-blue"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/php-svgrepo-com.svg"
+									class="service-img service-img-indigo"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/typescript-official-svgrepo-com.svg"
+									class="service-img service-img-blue"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/Android_robot_head.svg"
+									class="service-img service-img-green"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/postgresql-svgrepo-com.svg"
+									class="service-img service-img-blue"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/mysql-logo-svgrepo-com.svg"
+									class="service-img service-img-orange"
+								/>
+							</div>
+							<div class="service p-sm-3 p-1 col-4">
+								<img
+									src="images/services/ios-svgrepo-com.svg"
+									class="service-img service-img-white"
+								/>
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-3"></div>
 				</div>
 			</div>
 			<div id="contact" class="contact">
@@ -341,9 +271,10 @@ Build your dream with us "
 						<form id="contactForm" class="main-form" method="post">
 							<div class="row px-5">
 								<div class="col-12 text-center titlepage">
-									<h2 class="font-programecho text-upper">
+									<h2 class="font-monospace ">
 										Contact Us
 									</h2>
+									<br />
 								</div>
 								<div class="col-12 mb-4">
 									<input
@@ -396,24 +327,28 @@ Build your dream with us "
 			</div>
 			<div class="contact-bottom">
 				<div class="row">
-					<div class="col-3">
+					<div class="pl-2">
 						<div class="contact-info">
 							<a href="tel:+963958611943">
-								<span class="contact-info-icon">&#128241;</span>
-								<span class="hide-on-mobile"
-									>+963 958 611 943</span
+								<span class="contact-info-icon"
+									>&#128241;&nbsp;Call&nbsp;</span
+								>
+								<span class="desktop-and-tab"
+									>| +963 958 611 943</span
 								>
 							</a>
 						</div>
 					</div>
-					<div class="col-6"></div>
-					<div class="col-3">
+					<div class="flex-grow"></div>
+					<div class="pr-2">
 						<div class="contact-info text-right">
 							<a href="mailto:programecho@outlook.com">
-								<span class="hide-on-mobile"
-									>programecho@outlook.com</span
+								<span class="desktop-and-tab"
+									>programecho@outlook.com |</span
 								>
-								<span class="contact-info-icon">&#128232;</span>
+								<span class="contact-info-icon"
+									>&nbsp;E-Mail&nbsp;&#128232;</span
+								>
 							</a>
 						</div>
 					</div>
