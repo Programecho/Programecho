@@ -12,28 +12,32 @@
         scroll-margin-top: 15rem;
     }
 
-    .build-box h1{
-        padding-top:1rem;
+    .build-box h1 {
+        font-size: 5vw !important;
+        padding-top: 1rem;
     }
 
 
     .desktop-and-tab {
         display: unset !important;
     }
+
     .mobile-and-tab {
         display: none !important;
     }
+
     .mobile-only {
         display: none !important;
     }
+
     .desktop-only {
         display: unset !important;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .build_box h1 {
-        font-size: 87px;
+    .build-box h1 {
+        font-size: 5vw !important;
     }
 
     #proj .carousel-control-prev {
@@ -48,18 +52,22 @@
         scroll-margin-top: 15rem;
     }
 
-    .build-box h1{
-        padding-top:1rem;
+    .build-box h1 {
+        padding-top: 1rem;
     }
+
     .desktop-and-tab {
         display: unset !important;
     }
+
     .mobile-and-tab {
         display: none !important;
     }
+
     .mobile-only {
         display: none !important;
     }
+
     .desktop-only {
         display: unset !important;
     }
@@ -79,8 +87,9 @@
         padding-top: 4px;
     }
 
-    .build_box h1 {
-        font-size: 67px;
+    .build-box h1 {
+        font-size: 5vw;
+        padding-top: 5rem;
     }
 
     #proj .carousel-control-next {
@@ -107,19 +116,18 @@
         padding: 40px 30px;
     }
 
-    .build-box h1{
-        padding-top:3rem;
-    }
-
     .desktop-and-tab {
         display: unset !important;
     }
+
     .mobile-and-tab {
         display: unset !important;
     }
+
     .mobile-only {
         display: none !important;
     }
+
     .desktop-only {
         display: none !important;
     }
@@ -135,8 +143,8 @@
     }
 
     .build-box h1 {
-        font-size: 67px;
-        padding-top:3rem;
+        font-size: 4vw;
+        padding-top: 3rem;
     }
 
     #proj .carousel-control-prev,
@@ -170,6 +178,7 @@
     .navigation .navbar-collapse {
         background: #161825;
         padding: 3rem 1rem 1.5rem 1rem;
+        margin-top: 1.5rem;
         position: absolute;
         width: 100%;
         left: 0;
@@ -180,7 +189,7 @@
 
     .navbar-nav .nav-link {
         padding: 10px 0;
-        color: #fff;
+        color: #fff !important;
     }
 
     .navbar-toggler {
@@ -211,12 +220,15 @@
         filter: grayscale(100%);
         background-repeat: no-repeat;
     }
+
     .titlepage h2 {
         font-size: 8vw;
     }
+
     .desktop-and-tab {
         display: none !important;
     }
+
     .mobile-and-tab {
         display: unset !important;
     }
@@ -224,15 +236,26 @@
     .mobile-only {
         display: unset !important;
     }
+
     .desktop-only {
         display: none !important;
     }
+
+
+    .contact-info-icon {
+        font-size: 1.5rem !important;
+        line-height: 3rem !important;
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+
 }
 
 @media (max-width: 575px) {
     .titlepage h2 {
         font-size: 8vw;
     }
+
     * {
         scroll-margin-top: 8rem;
     }
@@ -264,7 +287,7 @@
         right: 54%;
     }
 
-    
+
 
     .middle {
         margin: 0;
@@ -302,7 +325,7 @@
 
     .navbar-nav .nav-link {
         padding: 10px 0;
-        color: #fff;
+        color: #fff !important;
     }
 
     .navbar-toggler {
@@ -335,6 +358,7 @@
     .desktop-and-tab {
         display: none !important;
     }
+
     .mobile-and-tab {
         display: unset !important;
     }
@@ -342,15 +366,32 @@
     .mobile-only {
         display: unset !important;
     }
+
     .desktop-only {
         display: none !important;
     }
+
+    .contact-info-icon {
+        font-size: 1.5rem !important;
+        line-height: 3rem !important;
+        width: 3rem !important;
+        height: 3rem !important;
+    }
 }
 
+
 @media (max-width: 412px) {
+    .contact-info-icon {
+        font-size: 1rem !important;
+        line-height: 2rem !important;
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
     .titlepage h2 {
         font-size: 8vw;
     }
+
     .logo {
         font-size: 1.6rem !important;
     }
@@ -362,13 +403,16 @@
     .desktop-and-tab {
         display: none !important;
     }
+
     .mobile-and-tab {
         display: unset !important;
     }
+
     .mobile-only {
         display: unset !important;
     }
-        .desktop-only {
+
+    .desktop-only {
         display: none !important;
     }
 }
