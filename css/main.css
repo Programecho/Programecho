@@ -201,7 +201,50 @@ img {
 	transition: ease-in all 0.5s;
 	color: #fff;
 }
+.project-card img {
+	width: 100%;
+	height: 50vh;
+	
+}
 
+/**/
+
+#proj .carousel-control-prev,
+#proj .carousel-control-next {
+     width: 47px;
+     height: 47px;
+     background: #252525;
+     opacity: 1;
+     font-size: 19px;
+     color: #fff;
+     top: 88%;
+     border-radius: 40px;
+}
+
+#proj .carousel-control-prev:hover,
+#proj .carousel-control-next:hover{
+	background: #fff;
+     color: #252525;
+}
+#proj .carousel-control-prev:focus,
+#proj .carousel-control-next:focus {
+     background: #252525;
+     color: #fff;
+}
+
+#proj .carousel-control-prev {
+     left: 25%;
+	 
+}
+
+#proj .carousel-control-next {
+     right: 25%;
+}
+
+.carousel-indicators {
+     display: none;
+}
+/**/
 .contact-bottom {
 	background-color: #161825;
 	padding: 1rem;

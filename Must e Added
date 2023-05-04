@@ -1,0 +1,47 @@
+<div id="services" class="services">
+			<div class="row">
+				<div class="col-12">
+					<div class="titlepage">
+						<h2 class="font-monospace ">Our Services</h2>
+						<br />
+					</div>
+				</div>
+				<div class="col-lg-3"></div>
+				<div class="col-12 col-lg-6">
+					<div class="row">
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/laravel-svgrepo-com.svg"
+								class="service-img service-img-red px-xs-none" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/node-js-svgrepo-com.svg" class="service-img service-img-green" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/flutter-svgrepo-com.svg" class="service-img service-img-blue" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/php-svgrepo-com.svg" class="service-img service-img-indigo" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/typescript-official-svgrepo-com.svg"
+								class="service-img service-img-blue" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/Android_robot_head.svg" class="service-img service-img-green" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/mysql-logo-svgrepo-com.svg"
+								class="service-img service-img-orange" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/postgresql-svgrepo-com.svg"
+								class="service-img service-img-blue" />
+						</div>
+						<div class="service p-sm-3 p-1 col-4">
+							<img src="images/services/ios-svgrepo-com.svg" class="service-img service-img-white" />
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+		</div>
