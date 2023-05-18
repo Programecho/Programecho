@@ -1,13 +1,5 @@
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
-
 @media (min-width: 1200px) and (max-width: 1342px) {
-    #proj .carousel-control-prev {
-        left: 45.6%;
-    }
-
+  
     * {
         scroll-margin-top: 15rem;
     }
@@ -40,11 +32,7 @@
         font-size: 5vw !important;
     }
 
-    #proj .carousel-control-prev {
-        left: 43.6%;
-    }
-
-    .footer h3 {
+   .footer h3 {
         font-size: 14px;
     }
 
@@ -92,24 +80,17 @@
         padding-top: 5rem;
     }
 
-    #proj .carousel-control-next {
-        right: 41%;
-    }
-
     .navbar-nav .nav-link {
         padding: 9px 11px;
+        font-size: 1rem;
     }
 
     .const span {
         font-size: 11px;
     }
 
-    .services_ban {
+    .services-banner {
         padding: 0 0px;
-    }
-
-    .project_text h3 {
-        font-size: 22px;
     }
 
     .main_form {
@@ -147,21 +128,12 @@
         padding-top: 3rem;
     }
 
-    #proj .carousel-control-prev,
-    #proj .carousel-control-next {
-        top: 96%;
-    }
-
-    #proj .carousel-control-next {
-        right: 54%;
-    }
-
     .middle {
         margin: 0;
         padding-top: 37px;
     }
 
-    .project_img {
+    .service-img {
         margin-top: 30px
     }
 
@@ -260,7 +232,7 @@
         scroll-margin-top: 8rem;
     }
 
-    .project_img {
+    .service-img {
         margin-top: 30px
     }
 
@@ -278,17 +250,6 @@
         height: 176px;
     }
 
-    #proj .carousel-control-prev,
-    #proj .carousel-control-next {
-        top: 93%;
-    }
-
-    #proj .carousel-control-next {
-        right: 54%;
-    }
-
-
-
     .middle {
         margin: 0;
         padding-top: 37px;
@@ -298,7 +259,7 @@
         padding: 40px 20px;
     }
 
-    .services_ban {
+    .services-banner {
         padding: 0 0px;
     }
 

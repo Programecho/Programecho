@@ -68,7 +68,7 @@ img {
 .titlepage {
 	text-align: center;
 }
-.service {
+.technology {
 	padding: 1vw;
 }
 .titlepage h2 {
@@ -107,12 +107,14 @@ img {
 	display: none;
 }
 .mobile-and-tab {
-    display: none;
+	display: none;
 }
 .flex-grow {
 	flex-grow: 1;
 }
-
+.border-top-white {
+	border-top-color: white;
+}
 /** contact section **/
 
 .contact {
@@ -137,10 +139,10 @@ img {
 
 .contact-info-icon {
 	font-size: 2rem;
-    line-height: 4rem;
-    width: 4rem;
-    text-align: center;
-    height: 4rem;
+	line-height: 4rem;
+	width: 4rem;
+	text-align: center;
+	height: 4rem;
 }
 
 .contact-info a:hover {
@@ -151,7 +153,7 @@ img {
 .main-form {
 	border-radius: 1rem;
 	padding: 1.5rem 1.5rem;
-	background: #161825CC;
+	background: #161825cc;
 	box-shadow: 0 0 250px rgba(3, 3, 3, 0.15);
 }
 
@@ -201,48 +203,54 @@ img {
 	transition: ease-in all 0.5s;
 	color: #fff;
 }
-.project-card img {
+/* servisces section */
+
+.services {
+	background-color: #161825cc;
+	border-radius: 1rem;
+	color: #ddd;
+	padding: 1.5rem;
+	margin-top: 5.5rem;
+}
+
+.service-card img {
 	width: 100%;
 	height: 50vh;
-	
 }
 
-/**/
-
-#proj .carousel-control-prev,
-#proj .carousel-control-next {
-     width: 47px;
-     height: 47px;
-     background: #252525;
-     opacity: 1;
-     font-size: 19px;
-     color: #fff;
-     top: 88%;
-     border-radius: 40px;
+#service .carousel-control-prev,
+#service .carousel-control-next {
+	width: 47px;
+	height: 47px;
+	background: #252525;
+	opacity: 1;
+	font-size: 19px;
+	color: #fff;
+	top: 88%;
+	border-radius: 40px;
 }
 
-#proj .carousel-control-prev:hover,
-#proj .carousel-control-next:hover{
+#service .carousel-control-prev:hover,
+#service .carousel-control-next:hover {
 	background: #fff;
-     color: #252525;
+	color: #252525;
 }
-#proj .carousel-control-prev:focus,
-#proj .carousel-control-next:focus {
-     background: #252525;
-     color: #fff;
-}
-
-#proj .carousel-control-prev {
-     left: 25%;
-	 
+#service .carousel-control-prev:focus,
+#service .carousel-control-next:focus {
+	background: #252525;
+	color: #fff;
 }
 
-#proj .carousel-control-next {
-     right: 25%;
+#service .carousel-control-prev {
+	left: 23%;
+}
+
+#service .carousel-control-next {
+	right: 23%;
 }
 
 .carousel-indicators {
-     display: none;
+	display: none;
 }
 /**/
 .contact-bottom {
@@ -284,7 +292,7 @@ img {
 /*  */
 
 .full-bg {
-	background: url(../images/banner3.webp);
+	background: url(../images/background.webp);
 	filter: brightness(40%) opacity(90%);
 	backface-visibility: hidden;
 	background-size: cover;
@@ -367,7 +375,7 @@ img {
 /** about section **/
 
 .about {
-	background-color: #161825CC;
+	background-color: #161825cc;
 	border-radius: 1rem;
 	color: #ddd;
 	padding: 1.5rem;
@@ -395,7 +403,7 @@ img {
 
 .about-img figure img {
 	width: 100%;
-    border-radius: 1rem;
+	border-radius: 1rem;
 }
 
 /*-- navigation--*/
@@ -484,10 +492,10 @@ img {
 	color: #161825;
 }
 
-/** services section **/
+/** technologies section **/
 
-.services {
-	background-color: #161825CC;
+.technologies {
+	background-color: #161825cc;
 	border-radius: 1rem;
 	color: #ddd;
 	padding: 1.5rem;
@@ -499,40 +507,40 @@ img {
 	padding-bottom: 130px;
 }
 
-.service-img {
+.technology-img {
 	padding: 1rem;
 	border-radius: 1rem;
 }
 
-.service-img-red {
+.technology-img-red {
 	background-color: #f443;
 }
 
-.service-img-blue {
+.technology-img-blue {
 	background-color: #44f3;
 }
 
-.service-img-green {
+.technology-img-green {
 	background-color: #4f43;
 }
 
-.service-img-yellow {
+.technology-img-yellow {
 	background-color: #ff43;
 }
 
-.service-img-white {
+.technology-img-white {
 	background-color: #fff3;
 }
 
-.service-img-orange {
+.technology-img-orange {
 	background-color: #ffc54433;
 }
 
-.service-img-indigo {
+.technology-img-indigo {
 	background-color: #8f44c633;
 }
 
-.service_text {
+.technology_text {
 	position: absolute;
 	bottom: 10px;
 	color: #000;
@@ -545,7 +553,7 @@ img {
 	border-bottom-left-radius: 4%;
 }
 
-.service_text::before {
+.technology_text::before {
 	position: absolute;
 	color: #000;
 	bottom: 10;
@@ -556,21 +564,21 @@ img {
 	right: 10px;
 }
 
-.service_text:hover {
+.technology_text:hover {
 	cursor: pointer;
 	background-color: #fffffff2;
 	height: 303px;
 	transition: ease-in all 0.5s;
 }
 
-#pro_ho:hover.service_text h3 {
+#service-hover:hover.service_text h3 {
 	visibility: inherit;
 	color: #1b1a1a;
 	transition: ease-in all 0.5s;
 	padding-top: 20px;
 }
 
-.service_text h3 {
+.te .servicetext h3 {
 	transition: ease-in all 0.5s;
 	color: #000;
 	text-align: left;
@@ -581,8 +589,7 @@ img {
 	padding-bottom: 35px;
 	font-family: "Raleway", sans-serif;
 }
-
-.service_text p {
+chnology_text p {
 	color: #1b1a1a;
 	font-size: 17px;
 	text-align: left;
