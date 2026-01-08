@@ -1,12 +1,13 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Target, Zap, Lock, Lightbulb } from 'lucide-react'
 
 const About = () => {
   const features = [
-    { icon: '🎯', title: 'Expert Team', desc: 'Skilled developers ready for any challenge' },
-    { icon: '⚡', title: 'Fast Delivery', desc: 'Quick turnaround without compromising quality' },
-    { icon: '🔒', title: 'Secure & Reliable', desc: 'Enterprise-grade security and reliability' },
-    { icon: '💡', title: 'Innovation', desc: 'Cutting-edge solutions for modern problems' },
+    { icon: Target, title: 'Expert Team', desc: 'Skilled developers ready for any challenge' },
+    { icon: Zap, title: 'Fast Delivery', desc: 'Quick turnaround without compromising quality' },
+    { icon: Lock, title: 'Secure & Reliable', desc: 'Enterprise-grade security and reliability' },
+    { icon: Lightbulb, title: 'Innovation', desc: 'Cutting-edge solutions for modern problems' },
   ]
 
   return (
@@ -60,8 +61,8 @@ const About = () => {
               className="bg-slate-900/60 backdrop-blur-xl border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/20 group"
             >
               <CardContent className="p-6">
-                <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
-                  {feature.icon}
+                <div className="mb-4 transform group-hover:scale-110 transition-transform">
+                  <feature.icon className="w-10 h-10 text-cyan-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {feature.title}

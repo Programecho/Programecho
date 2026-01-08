@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import { Menu, X } from 'lucide-react'
 
 interface HeaderProps {
   isScrolled: boolean
@@ -44,12 +45,16 @@ const Header = ({ isScrolled }: HeaderProps) => {
                 e.preventDefault()
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
-              className="flex items-center space-x-3 group"
+              className="flex items-center group"
             >
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">&lt;/&gt;</span>
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              <img
+                src="/images/programecho-dark.svg"
+                alt="ProgramEcho Logo"
+                className="h-10 sm:h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+              />
+              &nbsp;
+              &nbsp;
+              <span className="font-programecho tracking-wider text-xl font-bold bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
                 ProgramEcho
               </span>
             </a>
@@ -80,21 +85,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {isMenuOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 

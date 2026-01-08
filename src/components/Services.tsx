@@ -117,15 +117,9 @@ const Services = () => {
                 </div>
               </CardHeader>
               <CardContent className="p-4 pt-0">
-                <CardTitle className="text-sm font-semibold text-white text-center mb-1">
+                <CardTitle className="text-sm font-semibold text-white text-center">
                   {service.name}
                 </CardTitle>
-                <Badge 
-                  variant="outline" 
-                  className="text-xs w-full justify-center border-slate-700 text-slate-400"
-                >
-                  {service.category}
-                </Badge>
               </CardContent>
             </Card>
           ))}

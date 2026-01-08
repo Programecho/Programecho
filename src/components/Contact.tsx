@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { Phone, Briefcase, Github, Mail, Send } from 'lucide-react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -54,10 +55,10 @@ const Contact = () => {
   }
 
   const socialLinks = [
-    { name: 'Phone', href: 'tel:+963958611943', icon: '📱', color: 'hover:bg-blue-500/20 hover:border-blue-500/50' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/programecho', icon: '💼', color: 'hover:bg-blue-600/20 hover:border-blue-600/50' },
-    { name: 'GitHub', href: 'https://github.com/Programecho', icon: '💻', color: 'hover:bg-gray-800/20 hover:border-gray-800/50' },
-    { name: 'Email', href: 'mailto:programecho@outlook.com', icon: '✉️', color: 'hover:bg-red-500/20 hover:border-red-500/50' },
+    { name: 'Phone', href: 'tel:+963958611943', icon: Phone, color: 'hover:bg-blue-500/20 hover:border-blue-500/50' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/programecho', icon: Briefcase, color: 'hover:bg-blue-600/20 hover:border-blue-600/50' },
+    { name: 'GitHub', href: 'https://github.com/Programecho', icon: Github, color: 'hover:bg-gray-800/20 hover:border-gray-800/50' },
+    { name: 'Email', href: 'mailto:programecho@outlook.com', icon: Mail, color: 'hover:bg-red-500/20 hover:border-red-500/50' },
   ]
 
   return (
@@ -126,7 +127,7 @@ const Contact = () => {
                       value={formData.Email}
                       onChange={handleChange}
                       required
-                      className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-purple-500"
+                        className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-cyan-500"
                     />
                   </div>
 
@@ -150,11 +151,7 @@ const Contact = () => {
                     size="lg"
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
-                    {!isSubmitting && (
-                      <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                      </svg>
-                    )}
+                    {!isSubmitting && <Send className="ml-2 w-5 h-5" />}
                   </Button>
 
                   {submitStatus === 'success' && (
@@ -187,7 +184,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className={`flex items-center gap-3 p-4 rounded-lg border border-slate-800 ${link.color} transition-all duration-300 group`}
                     >
-                      <div className="text-2xl">{link.icon}</div>
+                      <link.icon className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
                       <div>
                         <div className="text-white font-medium group-hover:text-white">
                           {link.name}

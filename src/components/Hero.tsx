@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { Rocket, ArrowRight } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -14,8 +15,9 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="flex justify-center lg:justify-start gap-2">
-              <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/50 hover:bg-cyan-500/30">
-                🚀 We Build Dreams
+              <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/50 hover:bg-cyan-500/30 flex items-center gap-2">
+                <Rocket className="w-4 h-4" />
+                We Build Dreams
               </Badge>
             </div>
             
@@ -43,9 +45,7 @@ const Hero = () => {
                 className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white text-lg px-8 py-6 h-auto shadow-lg shadow-cyan-500/50"
               >
                 Start Your Project
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
                 size="lg"
