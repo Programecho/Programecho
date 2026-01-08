@@ -18,7 +18,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Image */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity" />
             <div className="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
               <img
                 src="/images/about.webp"
@@ -30,12 +30,12 @@ const About = () => {
 
           {/* Content */}
           <div className="space-y-6">
-            <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/50 w-fit">
+            <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/50 w-fit">
               About Us
             </Badge>
             <h2 className="text-4xl sm:text-5xl font-bold text-white">
               We're More Than Just
-              <span className="block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Developers
               </span>
             </h2>
@@ -57,7 +57,7 @@ const About = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="bg-slate-900/60 backdrop-blur-xl border-slate-800 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 group"
+              className="bg-slate-900/60 backdrop-blur-xl border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/20 group"
             >
               <CardContent className="p-6">
                 <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">

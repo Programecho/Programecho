@@ -84,12 +84,12 @@ const Services = () => {
     >
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/50 mb-4">
+          <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/50 mb-4">
             Our Tech Stack
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Technologies We
-            <span className="block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
               Master & Love
             </span>
           </h2>

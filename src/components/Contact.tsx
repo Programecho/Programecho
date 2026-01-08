@@ -68,12 +68,12 @@ const Contact = () => {
       >
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/50 mb-4">
+            <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/50 mb-4">
               Get In Touch
             </Badge>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               Let's Build Something
-              <span className="block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Amazing Together
               </span>
             </h2>
@@ -102,7 +102,7 @@ const Contact = () => {
                         value={formData.Name}
                         onChange={handleChange}
                         required
-                        className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-purple-500"
+                        className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-cyan-500"
                       />
                     </div>
                     <div>
@@ -113,7 +113,7 @@ const Contact = () => {
                         value={formData.Phone}
                         onChange={handleChange}
                         required
-                        className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-purple-500"
+                        className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-cyan-500"
                       />
                     </div>
                   </div>
@@ -146,7 +146,7 @@ const Contact = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
+                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white"
                     size="lg"
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}

@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -14,7 +14,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="flex justify-center lg:justify-start gap-2">
-              <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/50 hover:bg-purple-500/30">
+              <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/50 hover:bg-cyan-500/30">
                 🚀 We Build Dreams
               </Badge>
             </div>
@@ -23,7 +23,7 @@ const Hero = () => {
               <span className="block text-white mb-2">
                 Transform Your
               </span>
-              <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+              <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                 Ideas Into Reality
               </span>
             </h1>
@@ -40,7 +40,7 @@ const Hero = () => {
                   const element = document.querySelector('#contact')
                   element?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white text-lg px-8 py-6 h-auto shadow-lg shadow-purple-500/50"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white text-lg px-8 py-6 h-auto shadow-lg shadow-cyan-500/50"
               >
                 Start Your Project
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -81,7 +81,7 @@ const Hero = () => {
           <div className="relative hidden lg:block">
             <div className="relative">
               {/* Glowing Card */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-30 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl blur-2xl opacity-30 animate-pulse" />
               <div className="relative bg-slate-900/80 backdrop-blur-xl rounded-3xl p-8 border border-slate-800 shadow-2xl">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -96,8 +96,8 @@ const Hero = () => {
                     <div className="h-3 bg-slate-800 rounded w-5/6" />
                   </div>
                   <div className="grid grid-cols-2 gap-4 pt-4">
-                    <div className="h-20 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg border border-purple-500/30" />
-                    <div className="h-20 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30" />
+                    <div className="h-20 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-lg border border-cyan-500/30" />
+                    <div className="h-20 bg-gradient-to-br from-teal-500/20 to-cyan-500/20 rounded-lg border border-teal-500/30" />
                   </div>
                 </div>
               </div>
