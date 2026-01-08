@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from '@/components/ui/button'
 
 interface HeaderProps {
   isScrolled: boolean
@@ -8,9 +9,9 @@ const Header = ({ isScrolled }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: 'About', href: '#about', icon: 'ℹ️' },
-    { name: 'Services', href: '#services', icon: '💼' },
-    { name: 'Contact Us', href: '#contact', icon: '📞' },
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   const scrollToSection = (href: string) => {
@@ -23,92 +24,101 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled ? 'py-2' : 'py-4'
       }`}
     >
-      <div className="mx-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <nav
-          className={`rounded-2xl backdrop-blur-xl transition-all duration-300 ${
+          className={`rounded-2xl backdrop-blur-md transition-all duration-500 border ${
             isScrolled
-              ? 'bg-white/90 shadow-2xl'
-              : 'bg-white/95 shadow-lg'
+              ? 'bg-slate-900/80 border-slate-800 shadow-2xl'
+              : 'bg-slate-900/60 border-slate-700/50 shadow-lg'
           }`}
         >
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
-              {/* Logo */}
-              <div className="flex-shrink-0">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    window.scrollTo({ top: 0, behavior: 'smooth' })
-                  }}
-                  className="block"
+          <div className="flex items-center justify-between h-16 px-6">
+            {/* Logo */}
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }}
+              className="flex items-center space-x-3 group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-white font-bold text-xl">&lt;/&gt;</span>
+              </div>
+              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                ProgramEcho
+              </span>
+            </a>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex md:items-center md:space-x-2">
+              {navItems.map((item) => (
+                <Button
+                  key={item.name}
+                  variant="ghost"
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-slate-300 hover:text-white hover:bg-slate-800/50 transition-colors"
                 >
-                  <img
-                    src="/images/programecho-light-name.webp"
-                    alt="ProgramEcho Logo"
-                    className="h-12 sm:h-16 w-auto transition-transform duration-300 hover:scale-105"
-                  />
-                </a>
-              </div>
-
-              {/* Desktop Navigation */}
-              <div className="hidden md:flex md:items-center md:space-x-2">
-                {navItems.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.href)}
-                    className="px-4 py-2 text-gray-700 hover:text-programecho font-medium rounded-lg transition-all duration-300 hover:bg-programecho/10 uppercase text-sm tracking-wide flex items-center gap-2"
-                  >
-                    <span>{item.icon}</span>
-                    <span>{item.name}</span>
-                  </button>
-                ))}
-              </div>
-
-              {/* Mobile Menu Button */}
-              <button
-                className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                aria-label="Toggle menu"
+                  {item.name}
+                </Button>
+              ))}
+              <Button
+                onClick={() => scrollToSection('#contact')}
+                className="ml-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white border-0"
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {isMenuOpen ? (
-                    <path d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path d="M4 6h16M4 12h16M4 18h16" />
-                  )}
-                </svg>
-              </button>
+                Get Started
+              </Button>
             </div>
 
-            {/* Mobile Navigation */}
-            {isMenuOpen && (
-              <div className="md:hidden pb-4 space-y-2 animate-in slide-in-from-top duration-300">
-                {navItems.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.href)}
-                    className="w-full text-left px-4 py-3 text-gray-700 hover:text-programecho font-medium rounded-lg transition-all duration-300 hover:bg-programecho/10 uppercase text-sm tracking-wide flex items-center gap-2"
-                  >
-                    <span>{item.icon}</span>
-                    <span>{item.name}</span>
-                  </button>
-                ))}
-              </div>
-            )}
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800/50 transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden pb-4 px-6 space-y-2 border-t border-slate-800 mt-2 pt-4">
+              {navItems.map((item) => (
+                <Button
+                  key={item.name}
+                  variant="ghost"
+                  onClick={() => scrollToSection(item.href)}
+                  className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800/50"
+                >
+                  {item.name}
+                </Button>
+              ))}
+              <Button
+                onClick={() => scrollToSection('#contact')}
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
+              >
+                Get Started
+              </Button>
+            </div>
+          )}
         </nav>
       </div>
     </header>
@@ -116,4 +126,3 @@ const Header = ({ isScrolled }: HeaderProps) => {
 }
 
 export default Header
-
